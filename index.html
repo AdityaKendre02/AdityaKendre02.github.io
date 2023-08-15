@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Kendre's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showTabContent(tabId) {
+            const tabContents = document.querySelectorAll(".tab-content");
+            tabContents.forEach(tabContent => {
+                tabContent.classList.remove("active");
+            });
+            const activeTabContent = document.getElementById(tabId);
+            activeTabContent.classList.add("active");
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Aditya Kendre's Website</h1>
+</header>
+
+<nav>
+    <a href="#" onclick="showTabContent('about')">About Me</a>
+    <a href="#" onclick="showTabContent('contact')">Contact</a>
+    <a href="#" onclick="showTabContent('resume')">CV</a>
+    <a href="#" onclick="showTabContent('github')">Github Repository</a>
+</nav>
+
+<main>
+    <section id="about" class="tab-content active">
+        <h2>About Me</h2>
+        <div class="about-section">
+            <img src="Aditya Kendre Photo.jpeg" alt="Aditya Kendre">
+            <p>Welcome to my website! I am Aditya Kendre, a final year student at the Indian Institute of Technology Bombay, majoring in Mechanical Engineering and pursuing a minor in the Koita Centre for Digital Health (KCDH). With a pursuit towards innovation and technology, I've delved into a minor in KCDH and developed a keen interest in Data Science, Machine Learning, and Computational Biology. My curiosity doesn't stop there. Whether it's getting lost in the world of fiction and non-fiction books or traveling to new places, I embrace the joy of exploration. When I'm not behind a computer screen or a book, you'll find me on the badminton court, indulging in my favorite sport.</p>
+        </div>
+    </section>
+    
+    
+
+    <section id="contact" class="tab-content">
+        <h2>Contact</h2>
+        <p>Email: adityakendre11@gmail.com<br>Phone: +91 8208988993</p>
+        
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/aditya-kendre-3868a5200/" target="_blank">Aditya Kendre</a></p>
+    </section>
+
+    <section id="resume" class="tab-content">
+        <h2>CV</h2>
+        <iframe src="Aditya Kendre CV.pdf" width="100%" height="1300" allowfullscreen></iframe>
+        
+    </section>
+    
+    
+    
+        
+    </section>
+
+    <section id="github" class="tab-content">
+        <h2>Github Repository</h2>
+        <p><a href="https://github.com/AdityaKendre02" target="_blank">AdityaKendre02</a></p>
+    </section>
+</main>
+
+<footer>
+    &copy; Aditya Kendre - All Rights Reserved
+</footer>
+
+</body>
+</html>
